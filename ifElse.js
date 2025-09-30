@@ -1,6 +1,6 @@
 /*Задание №1*/
 
-let userNumber = prompt("Введите число");
+let userNumber = Number (prompt("Введите число"));
 if (userNumber > 10) {
     console.log("Число больше 10");
 } else {
@@ -19,7 +19,7 @@ if (userConfirmed) {
 
 /*Задание №3*/
 
-let userAge = prompt("Введите ваш возраст");
+let userAge = Number (prompt("Введите ваш возраст"));
 if (userAge < 18) {
     console.log("Вы еще подросток");
 } else if (userAge >= 18 && userAge <= 30) {
@@ -30,7 +30,7 @@ if (userAge < 18) {
 
 /*Задание №4*/
 
-let multiplicityOfNumber = prompt("Введите число");
+let multiplicityOfNumber = Number (prompt("Введите число"));
 let multiplicity = (multiplicityOfNumber % 2 === 0) ? "Число четное" : "Число нечетное";
 console.log(multiplicity);
 
@@ -67,8 +67,8 @@ console.log(Day);
 
 /*Задание №6*/
 
-let firstNumber = prompt("Введите первое число");
-let secondNumber = prompt("Введите второе число");
+let firstNumber = Number (prompt("Введите первое число"));
+let secondNumber = Number (prompt("Введите второе число"));
 
 if (firstNumber == secondNumber) {
   console.log("Числа равны");
@@ -83,40 +83,40 @@ let numberOfSeason = prompt("Введите число от 1 до 12");
 let season;
 switch (numberOfSeason) {
     case "1":
-        season = "Январь";
+        season = "Зима";
         break;
     case "2":
-        season = "Февраль";
+        season = "Зима";
         break;
     case "3":
-        season = "Март";
+        season = "Весна";
         break;
     case "4":
-        season = "Апрель";
+        season = "Весна";
         break;
     case "5":
-        season = "Май";
+        season = "Весна";
         break;
     case "6":
-        season = "Июнь";
+        season = "Лето";
         break;
     case "7":
-        season = "Июль";
+        season = "Лето";
         break;
             case "8":
-        season = "Август";
+        season = "Лето";
         break;
     case "9":
-        season = "Сентябрь";
+        season = "Осень";
         break;
             case "10":
-        season = "Октябрь";
+        season = "Осень";
         break;
     case "11":
-        season = "Ноябрь";
+        season = "Осень";
         break;
             case "12":
-        season = "Декабрь";
+        season = "Зима";
         break;
     default:
         season = "Некорректное значение"
